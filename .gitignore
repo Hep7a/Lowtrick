@@ -1,0 +1,9 @@
+node_modules
+mongodump
+dist
+.cache
+.config
+.upm
+.replit
+replit_zip_error_log.txt
+replit.nix

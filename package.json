@@ -1,0 +1,24 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "dump-db": "mongodump \"mongodb+srv://Hep7a:lowtrick@cluster0.3nk042f.mongodb.net/?retryWrites=true&w=majority\" -d test -o mongodump/",
+    "restore-db": "mongorestore \"mongodb+srv://Hep7a:lowtrick@cluster0.3nk042f.mongodb.net/?retryWrites=true&w=majority\" -d ctgp mongodump/test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.0.6",
+    "ctgp-rest": "^1.0.5",
+    "discord.js": "^14.11.0",
+    "mongodb": "^5.5.0",
+    "mongoose": "^7.1.1",
+    "node-fetch": "^2.6.11",
+    "nodemon": "^2.0.22",
+    "typescript": "^5.0.4"
+  }
+}
